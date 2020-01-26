@@ -6,6 +6,9 @@
     .texto-sobre-mim {
         margin-top: 25px;
     }
+    .nav-icon {
+        display: none;
+    }
  }
 
 /* Dispositivos small */
@@ -18,6 +21,9 @@
     }
     .texto-sobre-mim {
         margin-top: 25px;
+    }
+    .nav-icon {
+        display: none;
     }
  }
 
