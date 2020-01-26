@@ -9,12 +9,15 @@
     height: 100%;
     overflow-x: hidden;
 }
-body{
-  background: url('../img/bg-home.jpg');
+body{ 
+  font-family: "Public Sans", "Ubuntu", "Segoe UI", Arial, sans-serif;
+}
+#home {
+background: url('../img/bg-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  
-  font-family: "Segoe UI",Arial,sans-serif;
+  border-bottom-left-radius: 500px 40px;
+    border-bottom-right-radius:500px 40px;
 }
 /* Navegação
   -------------------------*/
@@ -32,16 +35,12 @@ body{
       color: rgba(255,255,255,.5);
       border-color: rgba(0,0,0,.0);
     }
-  .divisor{
-    width: 1px;
-    background-color: #fff;
-    margin: 12px 15px;
-  }
+    .navbar-transparente.scrolled {
+        background: rgba(0, 0, 0, 0.6) !important;
+        transition: background-color 200ms linear; 
+    }
   /* Capa
     -------------------------*/
-  .capa{
-      text-align: center;
-  }
   .btn-custom{
       color:#fff;
       border-radius: 5px;
@@ -52,78 +51,13 @@ body{
       padding: 12px 36px;
   
   }
-  .btn-roxo{
+  .btn-azul{
       background: #5352ed;
   }
-  .btn-roxo:hover{
+  .btn-azul:hover{
       background: #3742fa;
       color: #fff;
-  }
-  .btn-branco{
-      border: 2px solid white;
-  }
-  .btn-branco:hover{
-      background-color: white;
-      color: #000;
-  }
-  .carousel-control-next, .carousel-control-prev{
-      width: 5%;
-  }
-  /* Estrutura de conteudos
-  --------------------------- */
-  .caixa{
-      padding-top: 20px;
-      padding-bottom: 20px;
-  }
-  #servicos{
-      background: #fff;
-  }
-  #servicos h2, h3{
-      color: #7c25f8;
-  }
-  #recursos{
-      color:white;
-  }
-  #recursos h3{
-      color: #9bf0e1;
-  }
-  #recursos h2{
-      color: #fff;
-  }
-  .albuns{
-      padding: 10px 0;
-  }
-  .rotacionar{
-      transform: rotate(30deg);
-      padding-left: 80px;
-  }
-  /* Rodapé
-    -------------------------*/
-  footer{
-  background: #000;
-  padding: 50px 0 20px 0;
-  position: relative;
-  }
-  footer h4{
-      color:#919496;
-      font-size: 0.8em;
-      text-transform: uppercase;
-  }
-  footer .navbar-nav a{
-      color: #fff;
-      font-size: 0.8em;
-  }
-  footer .navbar-nav a:hover{
-      color: #9bf0e1;
-      text-decoration: none;
-  }
-  footer ul{
-      list-style: none;
-  }
-  footer ul li{
-      float: right;
-      margin: 0 5px;
-  }
+  } 
   /* Tipografia
     -------------------------*/
   h1{
@@ -132,10 +66,11 @@ body{
       margin-bottom: 48px;
       color:white;
   }
-  h2{
-      font-size: 3em;
-      font-weight: 700;
-      letter-spacing: -0.04em;
+  h2 {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 25px;
+    text-transform: uppercase;
   }
   h3{
       font-size: 1.25em;
@@ -143,3 +78,22 @@ body{
       letter-spacing: -0.04em;
       text-transform: uppercase;
   }
+
+  /* Icons */
+.icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.github {
+    background-image: url("../img/icon-github.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.linkedin {
+    background-image: url("../img/icon-linkedin.png");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

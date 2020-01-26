@@ -3,6 +3,9 @@
     .btn-custom{
         margin: 10px 15px;
     }
+    .texto-sobre-mim {
+        margin-top: 25px;
+    }
  }
 
 /* Dispositivos small */
@@ -13,6 +16,9 @@
     h1{
         font-size: 2.5em;
     }
+    .texto-sobre-mim {
+        margin-top: 25px;
+    }
  }
 
 /* Dispositivos médios */
@@ -22,6 +28,9 @@
     }
     nav.navbar-transparente {
         background: rgba(0, 0, 0, 0.0);
+    }
+    .texto-sobre-mim {
+        margin-top: 25px;
     }
  }
 
