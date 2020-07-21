@@ -4,198 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikael Santilio | Desenvolvedor Web</title>
+    <script src="https://kit.fontawesome.com/929e142675.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- START HEADER -->
-    <header class="header_area" >
-        <div class="main_menu" >
-            <nav>
-                <div class="container" >
-                    <a href="https://mikaelsantilio.github.io">
-                        <img src="assets/img/mikaelsantilio.svg" 
-                        alt="Mikael Santilio | Desenvolvedor Web"
-                        title="Mikael Santilio | Desenvolvedor Web">
+    <div class="body_container" >
+        <!-- START HEADER -->
+        <header class="main_header" >
+            <div class="main_header_container" >
+                <nav class="" >
+                    <div class="main_header_container_nav_logo" >
+                        <a href="https://mikaelsantilio.github.io">
+                            <img src="img/mikaelsantilio.svg" 
+                            alt="Mikael Santilio | Desenvolvedor Web"
+                            title="Mikael Santilio | Desenvolvedor Web">
+                        </a>
+                    </div >
+                    <a href="#" class="btn_menu"  onclick="showElement('nav_menu')" >
+                        <i class="fas fa-bars"></i>
                     </a>
-                    <div class="menu_options" >
+                    <div class="main_header_container_nav_menu" id="nav_menu" >
+                        <a href="#" onclick="hideElement('nav_menu')"  >
+                            <i class="fas fa-times"></i>
+                        </a>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sobre Mim</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Projetos</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a class="menu_option" href="#">Home</a></li>
+                            <li><a class="menu_option" href="#">Sobre Mim</a></li>
+                            <li><a class="menu_option" href="#">Serviços</a></li>
+                            <li><a class="menu_option" href="#">Projetos</a></li>
+                            <li><a class="menu_option" href="#">Contato</a></li>
+                            <li><a class="menu_option" href="#">Blog</a></li>
                         </ul>
                     </div>
-                </div >
-            </nav>
-        </div >
-    </header>
-    <!-- END HEADER -->
-    
-    <!-- START MAIN -->
-    <main>
-        <!-- HOME SECTION START -->
-        <section class="home_area" >
-            <header>
-                <h5>Olá meu nome é</h5>
-                <h1>Mikael Santilio</h1>
-                <span>Desenvolvedor de Sistemas Web</span>
-                <div class="social_icons">
-                    <a href="#"> <i class="fa-github" ></i> </a>
-                    <a href="#"> <i class="fa-linkedin" ></i> </a>
-                    <a href="#"> <i class="fa-whatsapp" ></i> </a>
-                    <a href="#"> <i class="fa-instagram" ></i> </a>
-                </div>
-                
-                <a href="#" class="btn">Saiba Mais</a>
-            </header>
-        </section>
-        <!-- HOME SECTION END -->
-        
-        <!-- SOBRE MIM SECTION START -->
-        <section class="about_area" >
-            <header>
-                <h1>Sobre Mim</h1>
-            </header>
-            <article>
-                <header>
-                    <h2>Desenvolvedor Web</h2>
-                    <span>Graduando em Análise e Desenvolvimento de Sistemas</span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Accusamus culpa repudiandae vitae blanditiis iure cum corrupti? 
-                        Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
-                        Tempore, dolores adipisci.</p>
-                </header>
-                <img src="" alt="">
-                <a href="#" class="btn" >Download CV</a>
-            </article>
-        </section>
-        <!-- SOBRE MIM SECTION END -->
-        
-        <!-- PROJETOS SECTION START -->
-        <section class="projects_area" >
-            <header>
-                <h1>Projetos</h1>
-            </header>
-            <article>
-                <header>
-                    <div class="thumbnail" >
-                        <img
-                        src=""
-                        alt="Atlassian | Sistema administrativo"
-                        title="Atlassian | Sistema administrativo">
-                    </div>
-                    <h2>Sistema administrativo</h2>
-                    <span>Atlassian</span>
-                </header>
-                <main>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Earum quaerat saepe amet nam non in corporis at architecto
-                    </p>
-                </main>
-                <footer>
-                    <a href="#" class="btn" >Ver Mais</a>
-                </footer>
-            </article>
-
-            <article>
-                <header>
-                    <div class="thumbnail" >
-                        <img
-                        src=""
-                        alt="Atlassian | Sistema administrativo"
-                        title="Atlassian | Sistema administrativo">
-                    </div>
-                    <h2>Sistema de revenda</h2>
-                    <span>Up Revendas</span>
-                </header>
-                <main>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Earum quaerat saepe amet nam non in corporis at architecto
-                    </p>
-                </main>
-                <footer>
-                    <a href="#" class="btn" >Ver Mais</a>
-                </footer>
-            </article>
-
-            <article>
-                <header>
-                    <div class="thumbnail" >
-                        <img
-                        src=""
-                        alt="Atlassian | Sistema administrativo"
-                        title="Atlassian | Sistema administrativo">
-                    </div>
-                    <h2>Sistema administrativo</h2>
-                    <span>Atlassian</span>
-                </header>
-                <main>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Earum quaerat saepe amet nam non in corporis at architecto
-                    </p>
-                </main>
-                <footer>
-                    <a href="#" class="btn" >Ver Mais</a>
-                </footer>
-            </article>
-        </section>
-        <!-- PROJETOS SECTION END -->
-
-        <!-- SERVICOS SECTION START -->
-        <section class="services_area" >
-            <header>
-                <h1>Serviços</h1>
-            </header>
-            <article>
-                <header>
-
-                </header>
-            </article>
-        </section>
-        <!-- SERVICOS SECTION END -->
-
-        <!-- BLOG SECTION START -->
-        <section class="blog_area">
-            <header>
-                <h1>Blog</h1>
-            </header>
-            <article>
-                <header></header>
-            </article>
-        </section>
-        <!-- BLOG SECTION END -->
-
-        <!-- CONTATO SECTION START -->
-        <section class="contact_area" >
-            <header>
-                <h1>Contato</h1>
-            </header>
-            <article>
-                <header></header>
-            </article>
-        </section>
-        <!-- CONTATO SECTION END -->
-    </main>
-    <!-- END MAIN -->
-
-    <footer>
-        <header>
-            <div>
-                <img src="assets/img/mikaelsantilio.svg" alt="">
-                <ul>
-                    <li></li>
-                </ul>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-            <span>Copy</span>
-
+                </nav>
+            </div >
         </header>
-    </footer>
+        <!-- END HEADER -->
+        
+        <!-- START MAIN -->
+        <main>
+            <div class="main_container" >
+                <!-- HOME SECTION START -->
+                <section class="home_section" >
+                    <header>
+                        <h5>Olá meu nome é</h5>
+                        <h1>Mikael Santilio</h1>
+                        <span>Desenvolvedor de Sistemas Web</span>
+                        <div class="social_icons">
+                            <a href="#"> <i class="fa-github" ></i> </a>
+                            <a href="#"> <i class="fa-linkedin" ></i> </a>
+                            <a href="#"> <i class="fa-whatsapp" ></i> </a>
+                            <a href="#"> <i class="fa-instagram" ></i> </a>
+                        </div>
+                        
+                        <a href="#" class="btn">Saiba Mais</a>
+                    </header>
+                </section>
+                <!-- HOME SECTION END -->
+
+                <!-- SOBRE MIM SECTION START -->
+                <section class="about_section" >
+                    <header>
+                        <h1>Sobre Mim</h1>
+                    </header>
+                    <article>
+                        <header>
+                            <h2>Desenvolvedor Web</h2>
+                            <span>Graduando em Análise e Desenvolvimento de Sistemas</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Accusamus culpa repudiandae vitae blanditiis iure cum corrupti? 
+                                Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
+                                Tempore, dolores adipisci.</p>
+                        </header>
+                        <img src="" alt="">
+                        <a href="#" class="btn" >Download CV</a>
+                    </article>
+                </section>
+                <!-- SOBRE MIM SECTION END -->
+                    
+                <!-- PROJETOS SECTION START -->
+                <section class="projects_section" >
+                    <header>
+                        <h1>Projetos</h1>
+                    </header>
+                    <article>
+                        <header>
+                            <div class="thumbnail" >
+                                <img
+                                src=""
+                                alt="Atlassian | Sistema administrativo"
+                                title="Atlassian | Sistema administrativo">
+                            </div>
+                            <h2>Sistema administrativo</h2>
+                            <span>Atlassian</span>
+                        </header>
+                        <main>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Earum quaerat saepe amet nam non in corporis at architecto
+                            </p>
+                        </main>
+                        <footer>
+                            <a href="#" class="btn" >Ver Mais</a>
+                        </footer>
+                    </article>
+                    
+                    <article>
+                        <header>
+                            <div class="thumbnail" >
+                                <img
+                                src=""
+                                alt="Atlassian | Sistema administrativo"
+                                title="Atlassian | Sistema administrativo">
+                            </div>
+                            <h2>Sistema de revenda</h2>
+                            <span>Up Revendas</span>
+                        </header>
+                        <main>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Earum quaerat saepe amet nam non in corporis at architecto
+                            </p>
+                        </main>
+                        <footer>
+                            <a href="#" class="btn" >Ver Mais</a>
+                        </footer>
+                    </article>
+                    
+                    <article>
+                        <header>
+                            <div class="thumbnail" >
+                                <img
+                                src=""
+                                alt="Atlassian | Sistema administrativo"
+                                title="Atlassian | Sistema administrativo">
+                            </div>
+                            <h2>Sistema administrativo</h2>
+                            <span>Atlassian</span>
+                        </header>
+                        <main>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Earum quaerat saepe amet nam non in corporis at architecto
+                            </p>
+                        </main>
+                        <footer>
+                            <a href="#" class="btn" >Ver Mais</a>
+                        </footer>
+                    </article>
+                </section>
+                <!-- PROJETOS SECTION END -->
+                    
+                <!-- SERVICOS SECTION START -->
+                <section class="services_section" >
+                    <header>
+                        <h1>Serviços</h1>
+                    </header>
+                    <article>
+                        <header>
+                            
+                        </header>
+                    </article>
+                </section>
+                <!-- SERVICOS SECTION END -->
+                    
+                <!-- BLOG SECTION START -->
+                <section class="blog_section">
+                    <header>
+                        <h1>Blog</h1>
+                    </header>
+                    <article>
+                        <header></header>
+                    </article>
+                </section>
+                <!-- BLOG SECTION END -->
+                    
+                <!-- CONTATO SECTION START -->
+                <section class="contact_section" >
+                    <header>
+                        <h1>Contato</h1>
+                    </header>
+                    <article>
+                        <header></header>
+                    </article>
+                </section>
+                <!-- CONTATO SECTION END -->
+            </div >
+            
+        </main>
+        <!-- END MAIN -->
+            
+        <footer>
+            <header>
+                <div>
+                    <img src="assets/img/mikaelsantilio.svg" alt="">
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <span>Copy</span>
+                
+            </header>
+        </footer>
+    </div >
+    <script src="js/script.js"></script>
 </body>
 </html>
