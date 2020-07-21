@@ -13,10 +13,9 @@ function hideElement(id_element) {
 
 function showElement(id_element) {
     element = document.getElementById(id_element);
+    sleep(500).then(() => {
+        element.style.display = 'block';
+    });
     element.classList.remove('hide');
     element.classList.add('show');
-    sleep(500).then(() => {
-        element.style.display = 'none';
-    });
-    element.style.display = 'block';
 }
