@@ -1,21 +1,43 @@
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+// fade out
+function fadeOut(el){
+    el.style.opacity = 1;
+    
+    (function fade() {
+        if ((el.style.opacity -= .1) < 0) {
+            el.style.display = 'none';
+            el.classList.add('is-hidden');
+        } else {
+            requestAnimationFrame(fade);
+        }
+    })();
 }
 
-function hideElement(id_element) {
-    element = document.getElementById(id_element);
-    element.classList.add('hide');
-    element.classList.remove('show');
-    sleep(500).then(() => {
-        element.style.display = 'none';
-    });
+// fade in
+function fadeIn(el, display){
+    if (el.classList.contains('is-hidden')){
+        el.classList.remove('is-hidden');
+    }
+    el.style.opacity = 0;
+    el.style.display = display || "block";
+    
+    (function fade() {
+        var val = parseFloat(el.style.opacity);
+        if (!((val += .1) > 1)) {
+            el.style.opacity = val;
+            requestAnimationFrame(fade);
+        }
+    })();
 }
 
-function showElement(id_element) {
-    element = document.getElementById(id_element);
-    sleep(500).then(() => {
-        element.style.display = 'block';
-    });
-    element.classList.remove('hide');
-    element.classList.add('show');
-}
+var btn_open = document.querySelector('.btn_menu');
+var btn_close = document.querySelector('.btn_close');
+
+var el = document.querySelector('#nav_menu');
+
+btn_open.addEventListener('click', function(e){
+    fadeIn(el);
+});
+
+btn_close.addEventListener('click', function(e){
+    fadeOut(el);
+});
