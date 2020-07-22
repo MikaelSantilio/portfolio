@@ -6,6 +6,7 @@
     <title>Mikael Santilio | Desenvolvedor Web</title>
     <script src="https://kit.fontawesome.com/929e142675.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/boot.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,11 +23,11 @@
                             title="Mikael Santilio | Desenvolvedor Web">
                         </a>
                     </div >
-                    <a href="#" class="btn_menu" >
-                        <i class="fas fa-bars"></i>
+                    <a href="#" class="icon btn_menu" >
+                        <img class="fill" src="img/bars-menu.svg" alt="">
                     </a>
-                    <div class="main_header_container_nav_menu is-hidden" id="nav_menu" >
-                        <a href="#" class="btn_close" >
+                    <div class="main_header_container_nav_menu is_hidden" id="nav_menu" >
+                        <a href="#" class="icon btn_close" >
                             <i class="fas fa-times"></i>
                         </a>
                         <ul>
@@ -53,13 +54,13 @@
                         <h1>Mikael Santilio</h1>
                         <span>Desenvolvedor de Sistemas Web</span>
                         <div class="social_icons">
-                            <a href="#"> <i class="fa-github" ></i> </a>
-                            <a href="#"> <i class="fa-linkedin" ></i> </a>
-                            <a href="#"> <i class="fa-whatsapp" ></i> </a>
-                            <a href="#"> <i class="fa-instagram" ></i> </a>
+                            <a href="#"> <i class="icon fa fa-github" ></i> </a>
+                            <a href="#"> <i class="icon fa fa-linkedin-square" ></i> </a>
+                            <a href="#"> <i class="icon fa fa-whatsapp" ></i> </a>
+                            <a href="#"> <i class="icon fa fa-instagram" ></i> </a>
                         </div>
                         
-                        <a href="#" class="btn">Saiba Mais</a>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
                     </header>
                 </section>
                 <!-- HOME SECTION END -->
@@ -67,10 +68,11 @@
                 <!-- SOBRE MIM SECTION START -->
                 <section class="about_section" >
                     <header>
-                        <h1>Sobre Mim</h1>
+                        <h1 class="section_title" >Sobre Mim</h1>
                     </header>
                     <article>
                         <header>
+                            <img src="img/profile-photo.png" alt="">
                             <h2>Desenvolvedor Web</h2>
                             <span>Graduando em Análise e Desenvolvimento de Sistemas</span>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -78,8 +80,8 @@
                                 Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
                                 Tempore, dolores adipisci.</p>
                         </header>
-                        <img src="" alt="">
-                        <a href="#" class="btn" >Download CV</a>
+                        
+                        <a href="#" class="btn btn-primary" >Download CV</a>
                     </article>
                 </section>
                 <!-- SOBRE MIM SECTION END -->
@@ -87,28 +89,26 @@
                 <!-- PROJETOS SECTION START -->
                 <section class="projects_section" >
                     <header>
-                        <h1>Projetos</h1>
+                        <h1 class="section_title" >Projetos</h1>
                     </header>
                     <article>
-                        <header>
+                        <div class="projects_section_card" >
                             <div class="thumbnail" >
                                 <img
-                                src=""
+                                src="img/thumbnail.png"
                                 alt="Atlassian | Sistema administrativo"
                                 title="Atlassian | Sistema administrativo">
                             </div>
-                            <h2>Sistema administrativo</h2>
-                            <span>Atlassian</span>
-                        </header>
-                        <main>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Earum quaerat saepe amet nam non in corporis at architecto
-                            </p>
-                        </main>
-                        <footer>
-                            <a href="#" class="btn" >Ver Mais</a>
-                        </footer>
+                            <div class="card_body" >
+                                <h2>Sistema administrativo</h2>
+                                <span>Atlassian</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Earum quaerat saepe amet nam non in corporis at architecto
+                                </p>
+                                <a href="#" class="btn btn-sm btn-link" >Ver Mais</a>
+                            </div >
+                        </div>
                     </article>
                     
                     <article>
@@ -160,7 +160,7 @@
                 <!-- SERVICOS SECTION START -->
                 <section class="services_section" >
                     <header>
-                        <h1>Serviços</h1>
+                        <h1 class="section_title" >Serviços</h1>
                     </header>
                     <article>
                         <header>
@@ -173,7 +173,7 @@
                 <!-- BLOG SECTION START -->
                 <section class="blog_section">
                     <header>
-                        <h1>Blog</h1>
+                        <h1 class="section_title" >Blog</h1>
                     </header>
                     <article>
                         <header></header>
@@ -184,7 +184,7 @@
                 <!-- CONTATO SECTION START -->
                 <section class="contact_section" >
                     <header>
-                        <h1>Contato</h1>
+                        <h1 class="section_title" >Contato</h1>
                     </header>
                     <article>
                         <header></header>
