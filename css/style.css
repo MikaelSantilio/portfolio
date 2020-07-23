@@ -178,12 +178,18 @@
 
 /* PROJETOS SECTION */
 .projects_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .projects_section_card {
-    height: 400px;
     background-color: var(--white-color);
-    margin: 35px 20px;
+    height: 400px;
+    width: 20em;
+    border-radius: 5px;
+    margin-top: 35px;
 }
 
 .projects_section_card h2, .projects_section_card span, .projects_section_card p {
@@ -201,13 +207,30 @@
     font-size: 14px;
     font-weight: 300px;
     margin-top: 3px;
-    /* margin-bottom: 5px; */
 }
 
 .projects_section_card p {
     font-size: 16px;
-    margin-top: 15px;
+    /* margin-top: 10px; */
     font-weight: 300;
+}
+
+.projects_section_card .img {
+    height: 200px;
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card_body a {
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 /* SERVICOS SECTION */
