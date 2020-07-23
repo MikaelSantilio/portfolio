@@ -57,3 +57,11 @@ body, html {
 .btn-link:hover {
     color: var(--main-color);
 }
+
+.radius {
+    border-radius: 5px;
+}
+
+.radius-top {
+    border-radius: 5px 5px 0 0;
+}
