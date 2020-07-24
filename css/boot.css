@@ -65,3 +65,21 @@ body, html {
 .radius-top {
     border-radius: 5px 5px 0 0;
 }
+
+.badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: lowercase;
+    border-radius: 1rem;
+    padding: .25em .85em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.badge-primary {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
