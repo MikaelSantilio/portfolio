@@ -43,6 +43,8 @@
 
 .main_header_container .btn_menu {
     padding: 20px;
+    /* mask: url('../img/bars-menu.svg'); */
+    /* background-color: var(--dark-color); */
 }
 
 .main_header_container_nav_menu ul {
