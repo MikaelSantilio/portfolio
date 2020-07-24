@@ -2,6 +2,7 @@
     --main-color: #4E67EB;
     --background-color: #F4F6F7;
     --dark-color: #000;
+    --neutral-gray: #888888;
 }
 
 .is_hidden {
@@ -221,6 +222,7 @@
     display: inline-block;
     font-size: 14px;
     font-weight: 300px;
+    color: var(--neutral-gray);
 }
 
 .projects_section_card p {
@@ -293,6 +295,8 @@
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 400;
+    color: var(--neutral-gray);
+
 }
 
 .services_section_card .service_icon {
