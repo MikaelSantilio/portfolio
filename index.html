@@ -31,24 +31,23 @@
                             <i class="icon-close"></i>
                         </a>
                         <ul>
-                            <li><a class="menu_option" href="#">Home</a></li>
-                            <li><a class="menu_option" href="#">Sobre Mim</a></li>
-                            <li><a class="menu_option" href="#">Serviços</a></li>
-                            <li><a class="menu_option" href="#">Projetos</a></li>
-                            <li><a class="menu_option" href="#">Contato</a></li>
-                            <li><a class="menu_option" href="#">Blog</a></li>
+                            <li><a class="menu_option" href="#section_home">Home</a></li>
+                            <li><a class="menu_option" href="#section_about">Sobre Mim</a></li>
+                            <li><a class="menu_option" href="#section_projects">Projetos</a></li>
+                            <li><a class="menu_option" href="#section_services">Serviços</a></li>
+                            <li><a class="menu_option" href="#section_blog">Blog</a></li>
+                            <li><a class="menu_option" href="#section_contact">Contato</a></li>
                         </ul>
                     </div>
                 </nav>
             </div >
         </header>
         <!-- END HEADER -->
-        
         <!-- START MAIN -->
         <main>
             <div class="main_container" >
                 <!-- HOME SECTION START -->
-                <section class="home_section" >
+                <section class="home_section" id="section_home" >
                     <div class="container" >
                         <div class="container_header_home" >
                             <header>
@@ -56,21 +55,24 @@
                                 <h1>Mikael Santilio</h1>
                                 <span>Desenvolvedor de Sistemas Web</span>
                                 <div class="social_icons">
-                                    <a class="icon" href="#"> <i class="icon-github" ></i> </a>
-                                    <a class="icon" href="#"> <i class="icon-linkedin" ></i> </a>
-                                    <a class="icon" href="#"> <i class="icon-whatsapp" ></i> </a>
-                                    <a class="icon" href="#"> <i class="icon-instagram" ></i> </a>
+                                    <a class="icon" href="https://github.com/MikaelSantilio"> <i class="icon-github" ></i> </a>
+                                    <a class="icon" href="https://www.linkedin.com/in/mikaelsantilio/"> <i class="icon-linkedin" ></i> </a>
+                                    <a class="icon" href="https://wa.me/5586999454360"> <i class="icon-whatsapp" ></i> </a>
+                                    <a class="icon" href="https://www.instagram.com/mikael.santilio/"> <i class="icon-instagram" ></i> </a>
                                 </div>
                                 
                                 <a href="#" class="btn btn-primary">Saiba Mais</a>    
                             </header>
                         </div>
+                        <div class="container_home_illustration" >
+                            <img src="img/code_thinking.svg" alt="">
+                        </div >
                     </div >
                 </section>
                 <!-- HOME SECTION END -->
 
                 <!-- SOBRE MIM SECTION START -->
-                <section class="about_section" >
+                <section class="about_section" id="section_about" >
                     <header>
                         <h1 class="section_title" >Sobre Mim</h1>
                     </header>
@@ -83,11 +85,14 @@
                                 <header>
                                     <h2>Desenvolvedor Web</h2>
                                     <h3>Graduando em Análise e Desenvolvimento de Sistemas</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                        Accusamus culpa repudiandae vitae blanditiis iure cum corrupti? 
-                                        Laborum ducimus quam ex? Sed blanditiis cum unde at, non facere! 
-                                        Tempore, dolores adipisci.</p>
-                                        <a href="#" class="btn btn-primary" >Download CV</a>
+                                    <p>Meu nome é Mikael Santilio e 
+                                        trabalho com desenvolvimento Web desde 2018. 
+                                        Apaixonado por aprender coisas novas, 
+                                        gosto de desenvolver projetos desde do primeiro 
+                                        wireframe até a implementação da regra de negócio no 
+                                        backand, que sejam desafiadores e que principalmente 
+                                        gerem valor para o usuário final.<p>
+                                        <a href="docs/CV_Mikael_Santilio.pdf" class="btn btn-primary" >Download CV</a>
                                 </header>
                             </div >
                         </div >
@@ -96,7 +101,7 @@
                 <!-- SOBRE MIM SECTION END -->
                     
                 <!-- PROJETOS SECTION START -->
-                <section class="projects_section" >
+                <section class="projects_section" id="section_projects" >
                     <header>
                         <h1 class="section_title" >Projetos</h1>
                     </header>
@@ -125,7 +130,7 @@
                                 </div>
                             </article>
                         </div >
-    
+
                         <div class="container_project_article" >
                             <article>
                                 <div class="projects_section_card radius" >
@@ -181,7 +186,7 @@
                 <!-- PROJETOS SECTION END -->
                     
                 <!-- SERVICOS SECTION START -->
-                <section class="services_section" >
+                <section class="services_section" id="section_services" >
                     <header>
                         <h1 class="section_title" >Serviços</h1>
                     </header>
@@ -241,11 +246,35 @@
                 <!-- SERVICOS SECTION END -->
                     
                 <!-- BLOG SECTION START -->
-                <section class="blog_section">
+                <section class="blog_section" id="section_blog">
                     <header>
                         <h1 class="section_title" >Blog</h1>
                     </header>
                     <div class="container" >
+                        <div class="container_blog_article" >
+                            <article>
+                                <div class="blog_section_card radius" >
+                                    <div class="thumbnail radius-top" >
+                                        <img
+                                        class="radius-top"
+                                        src="img/django.png"
+                                        alt="Django Rest Framework"
+                                        title="Django Rest Framework">
+                                    </div>
+                                    <div class="card_body" >
+                                        <span>July 24, 2020</span>
+                                        <h2>Django Rest Framework: Registro e autenticação de usuário com Djoser | 💻 #3</h2>
+                    
+                                    </div >
+                                    <div class="tags" >
+                                        <span class="badge badge-primary">django</span>
+                                        <span class="badge badge-primary">rest</span>
+                                        <span class="badge badge-primary">api</span>
+                                    </div >
+                                </div>
+                            </article>
+                        </div >
+
                         <div class="container_blog_article" >
                             <article>
                                 <div class="blog_section_card radius" >
@@ -325,7 +354,7 @@
                 <!-- BLOG SECTION END -->
                     
                 <!-- CONTATO SECTION START -->
-                <section class="contact_section" >
+                <section class="contact_section" id="section_contact" >
                     <header>
                         <h1 class="section_title" >Contato</h1>
                     </header>
@@ -358,22 +387,21 @@
             </div >
             
         </main>
-        <!-- END MAIN -->
-            
+        <!-- END MAIN -->   
         <footer class="footer" >
-            <header class="header_footer" >
+            <div class="header_footer" >
                 <div class="header_footer_logo" >
                     <img src="img/mikaelsantilio-footer.svg" alt="">
                 </div >
                 <div class="footer_social_icons">
-                    <a class="icon" href="#"> <i class="icon-github" ></i> </a>
-                    <a class="icon" href="#"> <i class="icon-linkedin" ></i> </a>
-                    <a class="icon" href="#"> <i class="icon-whatsapp" ></i> </a>
-                    <a class="icon" href="#"> <i class="icon-instagram" ></i> </a>
+                    <a class="icon" href="https://github.com/MikaelSantilio"> <i class="icon-github" ></i> </a>
+                    <a class="icon" href="https://www.linkedin.com/in/mikaelsantilio/"> <i class="icon-linkedin" ></i> </a>
+                    <a class="icon" href="https://wa.me/5586999454360"> <i class="icon-whatsapp" ></i> </a>
+                    <a class="icon" href="https://www.instagram.com/mikael.santilio/"> <i class="icon-instagram" ></i> </a>
                 </div>
-                <span class="copy" >Copyright © 2020 Mikael Santilio. All rights reserved</span>
+                <span class="copy" >Mikael Santilio, MIT License 2020.</span>
                 
-            </header>
+            </div>
         </footer>
     </div >
     <script src="js/script.js"></script>
